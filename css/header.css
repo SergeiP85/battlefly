@@ -71,6 +71,7 @@ nav ul li a:hover {
 .mobile-toggle {
     display: none;
     cursor: pointer;
+    padding-right: 15px;
 }
 
 @media (max-width: 900px) {
@@ -88,6 +89,7 @@ nav ul li a:hover {
         }
     .mobile-toggle {
             display: inline-block;
+            z-index: 1000;
         }
     nav ul {
             gap: 30px;
