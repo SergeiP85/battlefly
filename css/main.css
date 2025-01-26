@@ -1,11 +1,19 @@
 .home {
     text-align: center;
-    padding: 0 20px 70px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 30px;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.container {
+    margin: auto;
+    padding: 0 30px;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-title {
@@ -16,7 +24,7 @@
     justify-content: center;
 }
 .home-description {
-    margin: 0 0 35px 0;
+    margin: 0 0 15px 0;
     font-size: 18px;
     font-weight: 500;
     color: var(--white);
@@ -24,15 +32,44 @@
 .home-img {
     padding: 20px 0;
     width: 20%;
-    /* height: 400px; */
     object-fit: cover;
     align-items: center;
     justify-content: center;
     min-width: 300px;
+    animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform:rotate(0deg)
+        }
+    to {
+        transform:rotate(360deg)
+    }
+}
+
+.cta-area {
+    margin: 30px 0;
+}
+
+.btn {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.btn:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:var(--main_red);
+    color: var(--white);
 }
 
 @media (max-width: 480px) {
     .home-img {
-        min-width: 150px;
+        ;
     }
 }

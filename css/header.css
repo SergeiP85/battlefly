@@ -68,7 +68,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     nav ul {
         display: none;
         flex-direction: column;
