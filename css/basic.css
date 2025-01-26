@@ -29,13 +29,13 @@ h2 {
 	line-height:1;
 	margin-bottom:10px;
 	text-align:center;
-	color: var(--base-800);
+	color: var(--grey);
 	padding:30px;
 	small {
 		display:block;
 		font-weight:100;
 		font-size:0.5em;
-		color:var(--base);
+		color:var(--grey);
 	}
 	@media (max-width:1024px){
 		font-size:48px;
@@ -47,7 +47,7 @@ h3 {
 	font-weight:600;
 	line-height:1;
 	margin-bottom:20px;
-	color: var(--base-800);
+	color: var(--grey);
 }
 
 ul {
