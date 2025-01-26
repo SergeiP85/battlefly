@@ -80,7 +80,7 @@ nav ul li a:hover {
         display: none;
         flex-direction: column;
         text-align: center;
-        width: 100%;
+        width: 80%;
         background-color: var(--white);
         padding: 10px 0;
         position: absolute;
