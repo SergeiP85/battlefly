@@ -9,6 +9,7 @@ header {
     padding: 10px 20px;
     background-color: var(--main_black);
     border-bottom: 1px solid var(--grey);
+    color: var(--main_red);
     max-width: 1440px;
     margin: auto;
 }
