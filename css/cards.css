@@ -1,0 +1,51 @@
+.all-cards {
+    max-width: 1440px;
+    margin: auto;
+}
+.cards-container {
+    max-width: 1440px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-image: url(/img/samurai.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+}
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--grey); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(245, 24, 24, 0.861); 
+    padding: 15px;
+    max-width: 300px;
+    width: auto;
+    max-height: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; 
+    color: var(--grey); 
+}
+
+@media (max-width:900px) {
+    .card {
+        flex-direction: column;
+        }
+    .cards-container {
+        flex-wrap: wrap;
+    }
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px rgb(255, 0, 0); 
+    color: #dc0000; 
+}
+
+.card h3,
+.card p {
+    transition: inherit; 
+    color: inherit; 
+}
+
