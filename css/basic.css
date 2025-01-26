@@ -19,17 +19,11 @@ body {
 a {
 	text-decoration: none;
 	color: var(--blue);
-	/* &:hover {
-		text-decoration: underline;
-	} */
 }
 h2 {
 	font-size:32px;
 	line-height:1;
-	/* margin-bottom:10px; */
-	/* text-align:center; */
 	color: var(--grey);
-	/* padding:30px; */
 	@media (max-width:1024px){
 		font-size:32px;
 	}
