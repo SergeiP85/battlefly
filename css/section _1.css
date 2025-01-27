@@ -8,7 +8,7 @@
     margin: auto;
     box-sizing: border-box;
     padding: 0 30px;
-    background-image: url(../img/colorstars2.gif);
+    background-image: url(../img/nightsky.gif);
     background-size:contain; 
     background-position: center; 
     position: relative; 
@@ -33,9 +33,10 @@
     justify-content: center;
 }
 
-.note {
+/* .note {
     font-weight: bold;
-}
+    color: var(--white);
+} */
 
 .section-1-img {
     min-width: 300px;
@@ -56,5 +57,28 @@
     }
     }
 
+    /* Базовый стиль текста */
+.note {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff; /* Цвет текста */
+    text-align: center;
+    text-shadow: 0 0 5px #9b59b6; /* Начальная тень */
+    animation: glowingShadow 2s infinite alternate;
+  }
+  
+  /* Анимация фиолетовой тени */
+  @keyframes glowingShadow {
+    0% {
+      text-shadow: 0 0 5px #9b59b6, 0 0 10px #9b59b6, 0 0 20px #8e44ad;
+    }
+    50% {
+      text-shadow: 0 0 10px #9b59b6, 0 0 20px #8e44ad, 0 0 30px #6c3483;
+    }
+    100% {
+      text-shadow: 0 0 15px #9b59b6, 0 0 30px #8e44ad, 0 0 45px #5b2c6f;
+    }
+  }
+  
 
 

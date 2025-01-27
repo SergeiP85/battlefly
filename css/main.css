@@ -57,7 +57,7 @@
     margin: 30px 0;
 }
 
-.btn {
+/* .btn {
     border-radius: 10px;
     text-align: center;
     font-size: 16px;
@@ -71,4 +71,37 @@
     border-radius: 10px;
     background-color:var(--main_red);
     color: var(--white);
+} */
+
+.btn {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: var(--white);
+    background: linear-gradient(45deg, #9b59b6, #6c3483, #8e44ad, #5b2c6f);
+    background-size: 300% 300%;
+    animation: gradientShift 3s infinite alternate;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Анимация градиентного переливания */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Эффект при наведении */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }

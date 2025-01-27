@@ -1,6 +1,6 @@
 :root {
     --main_black: #070000;
     --main_red: #dc0000;
-    --grey: grey;
+    --grey: rgb(206, 202, 202);
     --white: white;
 }
