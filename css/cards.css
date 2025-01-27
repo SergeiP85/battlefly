@@ -23,7 +23,7 @@
     padding: 15px;
     max-width: 300px;
     width: auto;
-    max-height: auto;
+    height: auto;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; 
     color: var(--grey); 
@@ -49,3 +49,7 @@
     color: inherit; 
 }
 
+.img-card-3 {
+    margin-top: 5px;
+    width: 260px;
+}

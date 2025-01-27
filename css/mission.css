@@ -1,45 +1,35 @@
-.section_1 {
-    margin: 0 30px;
+.mission {
+    margin: 30px auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 1440px;
-    margin: auto;
     box-sizing: border-box;
     padding: 0 30px;
 }
 
-.section-1-tittle {
+.mission h2 {
+    display: flex;
     font-size: 32px;
     font-weight: 700;
     color: var(--white);
     margin: 20px 0 20px 0;
     justify-content: center;
 }
+/* .mission_description {
+    max-width: 600px;
+    margin: auto;
 
-.section_description {
-    margin-right: 100px;
-    padding: 0 30px;
-    max-width: 800px;
-}
+} */
 
-.subtitle {
-    display: flex;
-    justify-content: center;
-}
-
-.note {
-    font-weight: bold;
-}
-
-.section-1-img {
-    min-width: 300px;
+.mission-img {
+    min-width: 400px;
     padding: 30px;
 }
 
 @media (max-width: 768px) {
-    .section_1 {
+    .mission {
         display: flex;
         flex-direction: column;
         justify-content: center;
