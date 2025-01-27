@@ -8,6 +8,10 @@
     margin: auto;
     box-sizing: border-box;
     padding: 0 30px;
+    background-image: url(../img/nightsky.gif);
+    background-size:contain; 
+    background-position: center; 
+    position: relative; 
 }
 
 .section-1-tittle {

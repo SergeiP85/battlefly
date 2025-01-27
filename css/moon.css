@@ -1,0 +1,40 @@
+  /* Луна */
+  .moon {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* position: relative; */
+    margin: 0 auto;
+    margin-top: 5rem;
+    animation: animation 5s infinite;
+  }
+
+/* Луна - внутренние эффекты */
+.moon::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+  }
+  
+  /* Анимация для луны */
+@keyframes animation {
+    0% {
+      transform: translate(0px, 0px) scale(0.9);
+      box-shadow: none;
+    }
+    50% {
+      transform: translate(0px, 0px) scale(1.02);
+      box-shadow: 0 0 10px #fff, 0 0 80px #fff;
+    }
+    100% {
+      transform: translate(-40px, 0px) scale(0.9);
+    }
+  }
