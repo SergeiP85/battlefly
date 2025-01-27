@@ -1,46 +1,41 @@
 .mission {
     margin: 30px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 1440px; 
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 0 30px 400px;
+    background-image: url(../img/mission\ background\ image.png);
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
 }
 
 .mission h2 {
-    display: flex;
     font-size: 32px;
     font-weight: 700;
+    color: var(--main-black);
+    margin: 20px 0;
+    text-align: center; 
+}
+
+.mission p {
     color: var(--white);
-    margin: 20px 0 20px 0;
-    justify-content: center;
-}
-/* .mission_description {
-    max-width: 600px;
-    margin: auto;
-
-} */
-
-.mission-img {
-    min-width: 400px;
-    padding: 30px;
 }
 
-@media (max-width: 768px) {
+.mission_description {
+    /* display: flex;
+    max-width: 935px; 
+    padding: 20px 0 20px 300px;
+    margin: auto 0; 
+    flex: 1; 
+    justify-content: end; */
+}
+
+@media (max-width: 900px) {
     .mission {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        }
-    .section_1 img {
-        padding: 30px;
-    }
-    .section_description {
-        margin: 0;
-    }
-    }
-
-
-
+        padding: 30px 30px;
+}
+}
