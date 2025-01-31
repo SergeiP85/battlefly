@@ -142,7 +142,7 @@
             <img src="img/wave.jpg" alt="mission image" width="10%" class="mission-img">
         </section>
         <section class="section_1" id="motivation">
-            <div class="section_description">
+            <div class="section_description" id="content">
                 <p><span class="note">Miloh</span> ,founder and creative director of Battle *Fly*1313, holds a bachelor
                     of science in business administration and Organizational Leadership. A true free spirit and a
                     self-proclaimed Wolf Maiden, she is passionate about the world we live in, fiercely dedicated to
@@ -173,6 +173,27 @@
         </footer>
     </main>
     <script src="index.js"></script>
+
+<script>
+  async function fetchPosts() {
+    try {
+      const response = await fetch('https://mysite.infinityfreeapp.com/wp-json/wp/v2/posts');
+      const posts = await response.json();
+      let output = '';
+
+      posts.forEach(post => {
+        output += `<h2>${post.title.rendered}</h2><p>${post.content.rendered}</p>`;
+      });
+
+      document.getElementById('content').innerHTML = output;
+    } catch (error) {
+      console.error('Ошибка загрузки постов:', error);
+    }
+  }
+
+  fetchPosts();
+</script>
+    
 </body>
 
 </html>
