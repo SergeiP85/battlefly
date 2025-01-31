@@ -78,6 +78,14 @@ nav ul li a:hover {
 
     nav ul.active {
         display: flex;
+        padding-bottom: 30px;
     }
 
-
+    .burger-icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .burger-icon.rotated {
+        transform: rotate(180deg);
+    }
+    
